@@ -222,4 +222,4 @@ while True:
             counter += 1;
     print('Total counter is: ', counter)
 """
-#       
+# ya em govno s maslom
