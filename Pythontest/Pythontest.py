@@ -49,7 +49,7 @@ not(True) == False #        Отрицание
 3 >> 2 == 0 #   Бинарный сдвиг вправо (3>>2 == 00)
 3 >> 1 == 1 #   (3 >> 1 == 01)
 """
-# [eq
+
 
 
 #   Подмена переменных без буфера
@@ -273,3 +273,16 @@ while True:
     print(x)
 """
 #   Тип данных tuple (кортеж)
+#   Делаем проводник на питоне
+"""
+import os
+import time
+
+arr = []
+for path, dirs, files in os.walk('C:\\'):
+    for file in files:
+        full = os.path.join(path, file)
+        if '.exe' in file:
+           arr.append(file)
+print(arr)
+"""
