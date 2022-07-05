@@ -172,7 +172,7 @@ while True:
 """
 x = ''
 z = int(input('Введите длину слова: '))
-while len(x) < z: # len() - длина строки
+while len(x) < z: # len() - длина строки, массива и вообще чего угодно
     y = input('Ввод данных: ')
     x += y
 else:
@@ -251,3 +251,25 @@ x.clear() # очищает список
 x.extend([1,2,3,4]) # добавляет подсписок <аргумент 1> в конец списка 
 h = x.copy() # копируем список в новую переменную
 """
+#   Пример ( создание и редактирование списков )
+"""
+x = []
+while True:
+    temp = input('Введите команду:\n')
+    if temp == 'add':
+        temp1 = int(input('Введите элемент:\n'))
+        x.append(temp1)
+    elif temp == 'insert':
+        temp1 = int(input('Введите элемент:\n'))
+        temp2 = int(input('Введите номер элемента замены:\n'))
+        x.insert(temp2-1, temp1)
+    elif temp == 'delete':
+        temp1 = input('Введите номер элемента удаления:\n')
+        x.pop(int(temp1)-1)
+    elif temp == 'sort':
+        x.sort()
+    else:
+        break;
+    print(x)
+"""
+#   Тип данных tuple (кортеж)
